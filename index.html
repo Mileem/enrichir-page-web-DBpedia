@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Récupération des données depuis DBPedia</title>
+  <!--[if lt IE 9]>
+  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Manipuler les données de DBPedia</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<button id="target" class="btn btn-info" resource="http://fr.dbpedia.org/resource/Rennes" onclick="getInformation(this)">
+					Rennes
+				</button>
+				<button id="target" class="btn btn-info" resource="http://fr.dbpedia.org/resource/Paris" onclick="getInformation(this)">
+					Paris
+				</button>
+				<button id="target" class="btn btn-info" resource="http://fr.dbpedia.org/resource/Dijon" onclick="getInformation(this)">
+					Dijon
+				</button>
+			</div>
+			<div id="infos" class="col-md-6">
+				<!-- <div id="abstract"></div> -->
+				<!-- <div id="thumbnail"></div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
